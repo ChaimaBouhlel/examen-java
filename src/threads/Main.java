@@ -9,6 +9,8 @@ public class Main {
                 new SimpleThread().start();
             System.out.println("All Threads Started");*/
 
+        //tester Vector
+        /*
         Vector<String> messages;
         messages = new Vector<>(3);
         messages.add("a");
@@ -22,6 +24,14 @@ public class Main {
         messages.add("aa");
         messages.add("aa");
         System.out.println(messages.capacity());
+         */
+
+        Producteur p = new Producteur(10);
+        ThreadProducteur threadProducteur = new ThreadProducteur(p);
+        ThreadConsommateur threadConsommateur = new ThreadConsommateur(p);
+        threadProducteur.start();
+        threadConsommateur.start();
+        System.out.println("Les deux threads commencent");
     }
 
 
