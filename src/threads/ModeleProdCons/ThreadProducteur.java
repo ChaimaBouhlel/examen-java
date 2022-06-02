@@ -1,4 +1,4 @@
-package threads;
+package threads.ModeleProdCons;
 
 public class ThreadProducteur extends Thread{
     Producteur p ;

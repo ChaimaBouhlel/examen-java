@@ -1,4 +1,6 @@
-package threads;
+package threads.ModeleProdCons;
+
+import threads.ModeleProdCons.CapacityException;
 
 import java.util.Vector;
 
